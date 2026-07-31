@@ -3347,3 +3347,143 @@ input, select, textarea {
 			}
 
 	}
+
+/* =========================================
+   Madeleine McKenzie custom styling
+   ========================================= */
+
+/* Keep the main content comfortably narrow */
+#header {
+	max-width: 42rem;
+}
+
+/* Name */
+#header h1 {
+	font-size: 3.4rem;
+	line-height: 1.05;
+	letter-spacing: -0.035em;
+	margin-bottom: 1.25rem;
+}
+
+/* Current position */
+#header .position {
+	color: #ffffff;
+	font-size: 1.05rem;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 0.65rem;
+}
+
+/* Visible email address */
+#header .email {
+	font-size: 0.9rem;
+	margin-bottom: 1.8rem;
+}
+
+#header .email a {
+	color: rgba(255, 255, 255, 0.72);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+	text-decoration: none;
+	transition:
+		color 0.2s ease,
+		border-color 0.2s ease;
+}
+
+#header .email a:hover {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+/* Research statement */
+#header .introduction {
+	color: rgba(255, 255, 255, 0.82);
+	font-size: 1.05rem;
+	line-height: 1.7;
+	max-width: 39rem;
+	margin-bottom: 0;
+}
+
+/* Main Notion link */
+#main-actions {
+	margin-top: 2rem;
+	margin-bottom: 2.5rem;
+}
+
+#main-actions .button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 3.25rem;
+	padding: 0 1.6rem;
+	border: 1px solid rgba(255, 255, 255, 0.75);
+	border-radius: 0.35rem;
+	color: #ffffff;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		transform 0.2s ease;
+}
+
+#main-actions .button:hover {
+	background-color: rgba(255, 255, 255, 0.14);
+	border-color: #ffffff;
+	transform: translateY(-2px);
+}
+
+/* Make the footer less visually dominant */
+#footer {
+	margin-top: 0;
+}
+
+#footer .icons {
+	margin-bottom: 1rem;
+}
+
+#footer .copyright {
+	color: rgba(255, 255, 255, 0.45);
+	font-size: 0.7rem;
+}
+
+/* Improve contrast over bright astronomy images */
+body:after {
+	background:
+		linear-gradient(
+			90deg,
+			rgba(5, 8, 16, 0.92) 0%,
+			rgba(5, 8, 16, 0.76) 38%,
+			rgba(5, 8, 16, 0.28) 72%,
+			rgba(5, 8, 16, 0.12) 100%
+		);
+}
+
+/* Mobile layout */
+@media screen and (max-width: 736px) {
+
+	#header h1 {
+		font-size: 2.45rem;
+	}
+
+	#header .position,
+	#header .introduction {
+		font-size: 0.95rem;
+	}
+
+	#main-actions .button {
+		width: 100%;
+	}
+
+	body:after {
+		background:
+			linear-gradient(
+				90deg,
+				rgba(5, 8, 16, 0.9),
+				rgba(5, 8, 16, 0.62)
+			);
+	}
+}
